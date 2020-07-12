@@ -1,0 +1,53 @@
+
+
+{% extends 'admin.html' %}
+{% block admin %}
+
+    {% load static %}
+    <form action="{% url 'save_course' %}" method="post">
+    {% csrf_token %}
+
+    <tr>
+       <th colspan="2"  style="padding: 5px">Course Name: &nbsp;
+           <input type="text"  required name="s1">
+       </th>
+    </tr>
+    <tr>
+       <th colspan="2" style="padding: auto">Faculty Name:
+           <input type="text"  required name="s2">
+       </th>
+    </tr>
+    <tr>
+      <th colspan="2" style="padding: 5px">Date:
+          <input type="date"  required name="s3">
+      </th>
+    </tr>
+    <tr>
+       <th colspan="2" style="padding: 5px">Time:
+           <input type="time"  required name="s4">
+       </th>
+    </tr>
+    <tr>
+      <th colspan="2" style="padding: 5px">Fee: &nbsp; &nbsp;
+          <input type="number"  required name="s5">
+      </th>
+    </tr>
+    <tr>
+      <th colspan="2" style="padding: 5px">Duration:
+          <input type="text"  required name="s6">
+      </th>
+    </tr>
+    <tr>
+       <th colspan="2" style="padding: 5px">
+           <button type="submit">Register</button>
+       </th>
+    </tr>
+    {% if message %}
+        <th>
+            {{ message }}
+       </th>
+    {% endif %}
+
+    </form>
+
+{% endblock %}

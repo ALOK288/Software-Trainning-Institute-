@@ -1,0 +1,40 @@
+
+{% load static %}
+<html>
+  <head>
+      <title>
+          Python With Naveen
+      </title>
+  </head>
+  <body bgcolor="#faebd7">
+     <table align="center" border="0">
+         <tr>
+             <th>
+                 <img src="{% static 'images/educational logo.png' %}" width="150" height="150">
+             </th>
+             <th  style="font-size: 60px;font-family: 'Algerian',serif;color: red;background-color: yellowgreen">
+                 PYTHON  With NAVEEN
+             </th>
+         </tr>
+         <tr>
+             <th colspan="2" style="color: #f042ff;font-family: 'Agency FB',serif;font-size: 25px;">
+             <marquee> We Ensure Quality Education</marquee>
+             </th>
+         </tr>
+         <tr>
+             <th colspan="2">
+                 {% block pwn %}
+
+
+
+                 {% endblock %}
+             </th>
+         </tr>
+     <tr>
+            <th colspan="9" style="color: black;background-color: lavender;font-size: 30px;font-family: 'Arial Black',serif">
+                  Copy right @ Python with Naveen
+            </th>
+         </tr>
+     </table>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+
+{% load static %}
+<head>
+    <style>
+
+        .dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+    </style>
+</head>
+<title>Python With Naveen</title>
+  <body bgcolor="#faebd7">
+     <table align="center" border="0">
+         <tr>
+             <th>
+                 <img src="{% static 'images/educational logo.png' %}" width="150" height="150">
+             </th>
+             <th colspan="3" style="font-size: 60px;font-family: 'Algerian',serif;color: red;background-color: yellowgreen">
+                 PYTHON  With NAVEEN
+             </th>
+         </tr>
+         <tr>
+             <th colspan="4" style="color: #f042ff;font-family: 'Agency FB',serif;font-size: 25px;">
+             <marquee> We Ensure Quality Education</marquee>
+             </th>
+         </tr>
+       <tr>
+         <th>
+             <div class="dropdown">
+               <button class="dropbtn">ADMIN</button>
+                <div class="dropdown-content">
+                   <a href="{% url 'admin_login' %}">Login</a>
+                </div>
+             </div>
+         </th>
+         <th>
+            <div class="dropdown">
+               <button class="dropbtn">STUDENT</button>
+                <div class="dropdown-content">
+                    <a href="#">Login</a>
+                    <a href="#">Register</a>
+                    <a href="#">Search</a>
+                </div>
+             </div>
+         </th>
+         <th>
+             <div class="dropdown">
+               <button class="dropbtn">ONLINE COURSES</button>
+                <div class="dropdown-content">
+                    <a href="#">Trending Courses</a>
+                    <a href="#">Cloud Courses</a>
+                    <a href="#">Scripting Courses</a>
+                </div>
+             </div>
+
+         </th>
+           <th>
+               <div class="dropdown">
+               <button class="dropbtn">Contact Us</button>
+
+                </div>
+
+           </th>
+         </tr>
+
+         <tr>
+             <th colspan="4">
+                 {% block alok %}
+
+                 {% endblock %}
+             </th>
+         </tr>
+         <tr>
+            <th colspan="4" style="color: black;background-color: lavender;font-size: 30px;font-family: 'Arial Black',serif">
+                  Copy right @ Python with Naveen
+            </th>
+         </tr>
+
+     </table>
+   </body>

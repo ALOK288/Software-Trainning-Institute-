@@ -1,0 +1,43 @@
+
+{% extends 'common title.html' %}
+{% load static %}
+
+{% block pwn %}
+
+    <tr>
+      <th style="color: #2871ff;font-family: 'Agency FB',serif;font-size: 25px;padding: 5px">
+          <a href="{% url 'schedule_course' %}"> Schedule a Course</a>
+      </th>
+      <th style="color: #2871ff;font-family: 'Agency FB',sans-serif;font-size: 25px;padding: 5px">
+          <a href="{% url 'view_course' %}">
+                                             View a Course</a>
+      </th>
+      <th style="color: #2871ff;font-family: 'Agency FB',serif;font-size: 25px;padding: 5px">
+          <a href="{% url 'admin_logout' %}">
+        Logout</a>
+      </th>
+    </tr>
+
+    <tr>
+    {% if message %}
+        <th style="font-size: 20px;font-family: 'Arial Narrow',serif;color: coral">
+        {{ message }}
+    </th>
+    {% endif %}
+       <th colspan="3">
+           <img src="{% static 'images/Admin.png' %}">
+       </th>
+
+    </tr>
+
+    <tr>
+        <th>
+            {% block admin %}
+
+            {% endblock %}
+        </th>
+
+    </tr>
+
+
+{% endblock %}

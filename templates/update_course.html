@@ -1,0 +1,73 @@
+
+{% extends 'common title.html' %}
+
+{% block pwn %}
+    {% include 'admin-menu.html' %}
+
+    <form action="{% url 'update' %}" method="post">
+    {% csrf_token %}
+
+ <tr>
+     <th colspan="2"><h1>Update Course Details</h1></th>
+ </tr>
+    <tr>
+       <th colspan="2">
+           <label>
+               <input type="number" readonly value="{{ data.cid }}" name="t1">
+           </label>
+       </th>
+    </tr>
+    <tr>
+
+       <th colspan="2">
+           <label>
+               <input type="text" value="{{ data.cname }}" name="t2">
+           </label>
+       </th>
+    </tr>
+    <tr>
+       <th colspan="2">
+           <label>
+               <input type="text"  value="{{ data.cfaculty }}" name="t3">
+           </label>
+       </th>
+    </tr>
+    <tr>
+       <th colspan="2">
+           <label>
+               <input type="date"  value="{{ data.cdate }}" name="t4">
+           </label>
+       </th>
+    </tr>
+    <tr>
+       <th colspan="2">
+           <label>
+               <input type="time"  value="{{ data.ctime }}" name="t5">
+           </label>
+       </th>
+    </tr>
+    <tr>
+       <th colspan="2">
+           <label>
+               <input type="number"  value="{{ data.cfee }}" name="t6">
+           </label>
+       </th>
+    </tr>
+    <tr>
+       <th colspan="2">
+           <label>
+               <input type="text"  value="{{ data.cduration }}" name="t7">
+           </label>
+       </th>
+    </tr>
+    <tr>
+    <th colspan="2">
+        <button type="submit">Update</button>
+    </th>
+    </tr>
+
+    </form>
+
+
+
+{% endblock %}

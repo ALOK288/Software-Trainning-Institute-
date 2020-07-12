@@ -1,0 +1,41 @@
+
+{% extends 'common.html' %}
+
+{% block alok %}
+    {% load static %}
+    <form action="{% url 'login_check' %}" method="post">
+    {% csrf_token %}
+    <table align="center" border="0">
+        <tr>
+          <th rowspan="4">
+             <img src="{% static 'images/Admin.png' %}">
+          </th>
+
+        <th style="color: coral;font-family: Algerian,serif;font-size: 10px">
+           <h1>Enter your Credential</h1>
+        </th>
+        </tr>
+        <tr>
+          <th>
+              <input type="text" placeholder="Username" required name="t1">
+          </th>
+        <tr>
+        <th>
+            <input type="password" placeholder="Password" required name="t2">
+        </th>
+    </tr>
+        <tr>
+        <th>
+            <button type="submit">Login</button>
+        </th>
+       </tr>
+    <tr>
+        <th  style="padding: 10px;font-size: 25px;font-family: 'Arial Unicode MS',cursive;color: red">
+            {{ meaasges }}
+        </th>
+    </tr>
+        </table>
+
+    </form>
+
+{% endblock %}
