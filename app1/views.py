@@ -2,7 +2,7 @@ from django.contrib import messages
 from django.shortcuts import render,redirect
 
 from app1.models import CourseModel, StudentModel
-
+from django.db.utils import IntegrityError
 
 def showIndex(request):
     return render(request,"index.html")
@@ -75,8 +75,9 @@ def view_online_course(request):
     return render(request,"view_online_course.html",{'data':res})
 
 
-def stu_login(request):
-    return render(request,"stu_log.html")
+def stu_register(request):
+    course = CourseModel.objects.all()
+    return render(request, "stu_register.html", {'all_course':course})
 
 
 def save_student(request):
@@ -84,9 +85,29 @@ def save_student(request):
     cno = request.POST.get('n2')
     em = request.POST.get('n3')
     pa = request.POST.get('n4')
-    co = request.POST.get('n5')
-    st = StudentModel(name=na,contact_no=cno,email=em,password=pa)
-    st.save()
-    st.scourses.set(co)
-    messages.success(request,'Data Saved')
-    return redirect('save_student')
+    courses = request.POST.getlist('n5')
+    try:
+       sm = StudentModel(name=na,contact_no=cno,email=em,password=pa)
+       sm.save()
+       sm.scourses.set(courses)
+       return render(request, "stu_register.html", {'message': 'registed Successfully'})
+    except IntegrityError:
+
+        return render(request, "stu_register.html", {'error': 'Wrong Contact no'})
+
+
+def stu_login(request):
+    return render(request,"stu_login.html")
+
+
+def stu_validate(request):
+    cno = request.POST.get('t1')
+    pwd = request.POST.get('t2')
+    c_no = StudentModel.objects.get(contact_no=cno)
+    p_wd = StudentModel.objects.get(password=pwd)
+
+    if cno == c_no and pwd == p_wd:
+        return render(request,"stu_page.html")
+    else:
+        return render(request,"stu_login.html",{'error':'Invalid Details'})
+

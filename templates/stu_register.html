@@ -1,7 +1,7 @@
 
-{% extends 'common title.html' %}
+{% extends 'student-menu.html' %}
 
-{% block pwn %}
+{% block student-menu %}
     <form action="{% url 'save_student' %}" method="post">
     {% csrf_token %}
      <table align="center" border="0">
@@ -30,10 +30,7 @@
                  <input type="password" placeholder="Password" required name="n4">
              </th>
          </tr>
-         <tr>
-             <th style="padding: 5px">
-                 <input type="text" required placeholder="Courses" name="n5">
-             </th>
+
          </tr>
          <tr>
          <th>
@@ -41,14 +38,21 @@
          </th>
      </tr>
 
-{#         {% if messages %}#}
-{#             <tr>#}
-{#                <th>#}
-{#                    {{ messages}}#}
-{##}
-{#                </th>#}
-{#             </tr>#}
-{#         {% endif %}#}
+         {% if message %}
+             <tr>
+                <th>
+                   <h2> {{ message}} </h2>
+
+                </th>
+             </tr>
+         {% endif %}
+
+
+             {% if error %}
+                 <tr>
+                 <th><h2>{{ error }}</h2></th>
+                 </tr>
+             {% endif %}
 
      </table>
     </form>

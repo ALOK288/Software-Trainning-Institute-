@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32b958b7-d974-4597-b946-58d3e7248cb6" name="Default Changelist" comment="" />
+    <list default="true" id="32b958b7-d974-4597-b946-58d3e7248cb6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app1/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app1/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project1/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/common.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/stu_log.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stu_register.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,16 +31,16 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="db [2]" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="db [2]" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="db [2]" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
       </path>
@@ -121,39 +130,41 @@
     <session id="-821893165">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="app1_coursemodel" value="1" />
-          <entry key="app1_studentmodel" value="1" />
-          <entry key="html" value="12" />
-          <entry key="py" value="5" />
+          <entry key="app1_coursemodel" value="3" />
+          <entry key="app1_studentmodel" value="4" />
+          <entry key="app1_studentmodel_scourses" value="3" />
+          <entry key="html" value="18" />
+          <entry key="py" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Database Element" value="2" />
-          <entry key="HTML" value="12" />
-          <entry key="Python" value="5" />
+          <entry key="Database Element" value="10" />
+          <entry key="HTML" value="18" />
+          <entry key="Python" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="767" />
-          <entry key="py" value="390" />
+          <entry key="html" value="1387" />
+          <entry key="py" value="1162" />
           <entry key="txt" value="139" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="767" />
+          <entry key="HTML" value="1387" />
           <entry key="PLAIN_TEXT" value="139" />
-          <entry key="Python" value="390" />
+          <entry key="Python" value="1162" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.42" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
     </session>
@@ -165,9 +176,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1971">
               <caret line="73" column="46" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="46" />
-              <folding>
-                <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#body#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -175,8 +183,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project1/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="837">
-              <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+            <state relative-caret-position="493">
+              <caret line="36" column="64" lean-forward="true" selection-start-line="36" selection-start-column="64" selection-end-line="36" selection-end-column="64" />
               <folding>
                 <element signature="e#632#664#0" expanded="true" />
               </folding>
@@ -185,31 +193,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/admin-menu.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="783">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/common title.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-              <folding>
-                <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app1/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2376">
-              <caret line="91" column="20" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
+            <state relative-caret-position="371">
+              <caret line="109" column="37" selection-start-line="109" selection-start-column="37" selection-end-line="109" selection-end-column="37" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -218,28 +205,41 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app1/models.py">
+        <entry file="file://$PROJECT_DIR$/templates/stu_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="135">
+              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/stu_log.html">
+        <entry file="file://$PROJECT_DIR$/templates/student-menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="135">
+              <caret line="5" column="110" selection-start-line="5" selection-start-column="110" selection-end-line="5" selection-end-column="110" />
+              <folding>
+                <element signature="e#71#107#0#HTML" expanded="true" />
+                <element signature="e#131#167#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/schedule_course.html">
+        <entry file="file://$PROJECT_DIR$/templates/stu_login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+            <state relative-caret-position="81">
+              <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/stu_register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="783">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
@@ -247,11 +247,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/view_online_course.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
+            <state relative-caret-position="-243">
               <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-              <folding>
-                <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
-              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://0e8124d5-0288-4e72-b6d6-d2088b9d0e1e/schema/main/table/app1_studentmodel">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://0e8124d5-0288-4e72-b6d6-d2088b9d0e1e/schema/main/table/app1_studentmodel_scourses">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -285,10 +300,14 @@
         <option value="$PROJECT_DIR$/app1/models.py" />
         <option value="$PROJECT_DIR$/templates/admin-menu.html" />
         <option value="$PROJECT_DIR$/templates/view_online_course.html" />
+        <option value="$PROJECT_DIR$/templates/stu_log.html" />
         <option value="$PROJECT_DIR$/templates/common.html" />
         <option value="$PROJECT_DIR$/project1/urls.py" />
         <option value="$PROJECT_DIR$/app1/views.py" />
-        <option value="$PROJECT_DIR$/templates/stu_log.html" />
+        <option value="$PROJECT_DIR$/templates/stu_register.html" />
+        <option value="$PROJECT_DIR$/templates/stu_page.html" />
+        <option value="$PROJECT_DIR$/templates/stu_login.html" />
+        <option value="$PROJECT_DIR$/templates/student-menu.html" />
       </list>
     </option>
   </component>
@@ -299,8 +318,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="972" />
-    <option name="y" value="186" />
+    <option name="x" value="-3" />
+    <option name="y" value="95" />
     <option name="width" value="900" />
     <option name="height" value="800" />
   </component>
@@ -332,16 +351,6 @@
             <path>
               <item name="Software-Trainning-Institute-" type="b2602c69:ProjectViewProjectNode" />
               <item name="Software-Trainning-Institute-" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Software-Trainning-Institute-" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Software-Trainning-Institute-" type="462c0819:PsiDirectoryNode" />
-              <item name="app1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Software-Trainning-Institute-" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Software-Trainning-Institute-" type="462c0819:PsiDirectoryNode" />
-              <item name="project1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Software-Trainning-Institute-" type="b2602c69:ProjectViewProjectNode" />
@@ -438,19 +447,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2969697" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1295302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.11331445" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.1898017" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.036827195" />
@@ -460,7 +470,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.3295302" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3281879" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -559,20 +569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://e150f28b-f9cf-479a-8c49-5b44f2d7832c/schema/main/table/app1_coursemodel">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://e150f28b-f9cf-479a-8c49-5b44f2d7832c/schema/main/table/app1_studentmodel">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -588,37 +584,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python38-32/Lib/site-packages/django/db/models/fields/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="94">
           <caret line="1773" selection-start-line="1773" selection-end-line="1773" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/common.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1971">
-          <caret line="73" column="46" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="46" />
-          <folding>
-            <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project1/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="837">
-          <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
-          <folding>
-            <element signature="e#632#664#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -639,23 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app1/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2376">
-          <caret line="91" column="20" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app1/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/schedule_course.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -663,27 +615,194 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://e150f28b-f9cf-479a-8c49-5b44f2d7832c/schema/main/table/app1_studentmodel_scourses">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e150f28b-f9cf-479a-8c49-5b44f2d7832c/schema/main/table/app1_studentmodel_scourses">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e150f28b-f9cf-479a-8c49-5b44f2d7832c/schema/main/table/app1_studentmodel_scourses">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e150f28b-f9cf-479a-8c49-5b44f2d7832c/schema/main/table/app1_coursemodel">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e150f28b-f9cf-479a-8c49-5b44f2d7832c/schema/main/table/app1_studentmodel_scourses">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e150f28b-f9cf-479a-8c49-5b44f2d7832c/schema/main/table/app1_studentmodel_scourses">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e150f28b-f9cf-479a-8c49-5b44f2d7832c/schema/main/table/app1_studentmodel_scourses">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e150f28b-f9cf-479a-8c49-5b44f2d7832c/schema/main/table/app1_studentmodel_scourses">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e150f28b-f9cf-479a-8c49-5b44f2d7832c/schema/main/table/app1_studentmodel">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e150f28b-f9cf-479a-8c49-5b44f2d7832c/schema/main/table/app1_studentmodel_scourses">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e150f28b-f9cf-479a-8c49-5b44f2d7832c/schema/main/table/app1_studentmodel_scourses">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0e8124d5-0288-4e72-b6d6-d2088b9d0e1e/schema/main/table/app1_coursemodel">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e150f28b-f9cf-479a-8c49-5b44f2d7832c/schema/main/table/app1_studentmodel_scourses">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app1/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/view_online_course.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
+        <state relative-caret-position="-243">
           <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0e8124d5-0288-4e72-b6d6-d2088b9d0e1e/schema/main/table/app1_studentmodel_scourses">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python38-32/Lib/site-packages/django/contrib/messages/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="80" column="4" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0e8124d5-0288-4e72-b6d6-d2088b9d0e1e/schema/main/table/app1_studentmodel">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project1/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="36" column="64" lean-forward="true" selection-start-line="36" selection-start-column="64" selection-end-line="36" selection-end-column="64" />
           <folding>
-            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="e#632#664#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/stu_log.html">
+    <entry file="file://$PROJECT_DIR$/app1/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="371">
+          <caret line="109" column="37" selection-start-line="109" selection-start-column="37" selection-end-line="109" selection-end-column="37" />
           <folding>
-            <element signature="e#122#183#0#HTML" expanded="true" />
-            <element signature="e#295#315#0#HTML" expanded="true" />
-            <element signature="e#453#473#0#HTML" expanded="true" />
-            <element signature="e#616#636#0#HTML" expanded="true" />
-            <element signature="e#783#803#0#HTML" expanded="true" />
-            <element signature="e#1033#1053#0#HTML" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/stu_register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/common.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1971">
+          <caret line="73" column="46" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/stu_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/stu_login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/student-menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="110" selection-start-line="5" selection-start-column="110" selection-end-line="5" selection-end-column="110" />
+          <folding>
+            <element signature="e#71#107#0#HTML" expanded="true" />
+            <element signature="e#131#167#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
