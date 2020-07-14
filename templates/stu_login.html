@@ -1,0 +1,37 @@
+
+{% extends 'student-menu.html' %}
+
+{% block student-menu %}
+
+    <form action="{% url 'stu_validate' %}" method="post">
+    {% csrf_token %}
+    <table align="center" border="0">
+      <tr>
+          <th><h2>Enter Credential</h2></th>
+      </tr>
+    <tr>
+        <th><input type="tel" placeholder="contact no" required name="t1"> </th>
+    </tr>
+    <tr>
+        <th>
+            <input type="password" placeholder="password" required name="t2">
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <button type="submit">Login</button>
+        </th>
+    </tr>
+
+        {% if error %}
+        <tr>
+            <th>
+                {{ error }}
+            </th>
+        </tr>
+        {% endif %}
+
+    </table>
+    </form>
+
+{% endblock %}
