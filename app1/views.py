@@ -1,6 +1,7 @@
+from django.contrib import messages
 from django.shortcuts import render,redirect
 
-from app1.models import CourseModel
+from app1.models import CourseModel, StudentModel
 
 
 def showIndex(request):
@@ -67,3 +68,25 @@ def delete_record(request):
     id = request.GET.get('no')
     CourseModel.objects.get(cid=id).delete()
     return redirect("view_course")
+
+
+def view_online_course(request):
+    res = CourseModel.objects.all()
+    return render(request,"view_online_course.html",{'data':res})
+
+
+def stu_login(request):
+    return render(request,"stu_log.html")
+
+
+def save_student(request):
+    na = request.POST.get('n1')
+    cno = request.POST.get('n2')
+    em = request.POST.get('n3')
+    pa = request.POST.get('n4')
+    co = request.POST.get('n5')
+    st = StudentModel(name=na,contact_no=cno,email=em,password=pa)
+    st.save()
+    st.scourses.set(co)
+    messages.success(request,'Data Saved')
+    return redirect('save_student')

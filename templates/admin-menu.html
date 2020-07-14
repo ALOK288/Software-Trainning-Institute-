@@ -1,9 +1,6 @@
 
-
-
-
-
-
+{#{% extends 'common.html' %}#}
+{% block pwn %}
     <tr>
       <th style="color: #2871ff;font-family: 'Agency FB',serif;font-size: 25px;padding: 5px">
           <a href="{% url 'schedule_course' %}"> Schedule a Course</a>
@@ -14,8 +11,12 @@
       </th>
       <th style="color: #2871ff;font-family: 'Agency FB',serif;font-size: 25px;padding: 5px">
           <a href="{% url 'admin_logout' %}">
-        Logout</a>
+                                              Logout</a>
       </th>
+
+        <th style="color: #2871ff;font-family: 'Agency FB',serif;font-size: 25px;padding: 5px">
+            <a href="#">Student Info</a>
+        </th>
     </tr>
     <tr>
       <th>
@@ -26,4 +27,4 @@
     </tr>
 
 
-{#{% endblock %}#}
+{% endblock %}

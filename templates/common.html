@@ -48,7 +48,8 @@
              <th>
                  <img src="{% static 'images/educational logo.png' %}" width="150" height="150">
              </th>
-             <th colspan="3" style="font-size: 60px;font-family: 'Algerian',serif;color: red;background-color: yellowgreen">
+             <th colspan="3" style="font-size: 60px;font-family: 'Algerian',serif;color: red;background-color: yellowgreen;">
+
                  PYTHON  With NAVEEN
              </th>
          </tr>
@@ -70,9 +71,9 @@
             <div class="dropdown">
                <button class="dropbtn">STUDENT</button>
                 <div class="dropdown-content">
-                    <a href="#">Login</a>
+                    <a href="{% url 'stu_login' %}">Login</a>
                     <a href="#">Register</a>
-                    <a href="#">Search</a>
+                    <a href="{% url 'view_online_course' %}">View Course</a>
                 </div>
              </div>
          </th>
@@ -91,8 +92,8 @@
                <div class="dropdown">
                <button class="dropbtn">Contact Us</button>
                    <div class="dropdown-content">
-                       Main office @ Bhubaneswar
-                       contact @ 0661-2475643
+                       Main office @ Bhubaneswar<br>
+                       contact @ 0674-2475643
                    </div>
 
                 </div>

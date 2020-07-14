@@ -29,5 +29,8 @@ urlpatterns = [
     path('view_course/',views.view_course,name='view_course'),
     path('update_course/',views.update_course,name='update_course'),
     path('update/',views.update,name='update'),
-    path('delete_record/',views.delete_record,name='delete_record')
+    path('delete_record/',views.delete_record,name='delete_record'),
+    path('view_online_course/',views.view_online_course,name='view_online_course'),
+    path('stu_login/',views.stu_login,name='stu_login'),
+    path('save_student/',views.save_student,name='save_student')
 ]

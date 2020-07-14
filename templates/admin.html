@@ -4,19 +4,7 @@
 
 {% block pwn %}
 
-    <tr>
-      <th style="color: #2871ff;font-family: 'Agency FB',serif;font-size: 25px;padding: 5px">
-          <a href="{% url 'schedule_course' %}"> Schedule a Course</a>
-      </th>
-      <th style="color: #2871ff;font-family: 'Agency FB',sans-serif;font-size: 25px;padding: 5px">
-          <a href="{% url 'view_course' %}">
-                                             View a Course</a>
-      </th>
-      <th style="color: #2871ff;font-family: 'Agency FB',serif;font-size: 25px;padding: 5px">
-          <a href="{% url 'admin_logout' %}">
-        Logout</a>
-      </th>
-    </tr>
+   {% include 'admin-menu.html' %}
 
     <tr>
     {% if message %}
