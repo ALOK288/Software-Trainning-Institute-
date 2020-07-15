@@ -1,32 +1,34 @@
 from django.contrib import messages
-from django.shortcuts import render,redirect
+from django.shortcuts import render, redirect
 
 from app1.models import CourseModel, StudentModel
 from django.db.utils import IntegrityError
+from django.core.exceptions import ObjectDoesNotExist
+
 
 def showIndex(request):
-    return render(request,"index.html")
+    return render(request, "index.html")
 
 
 def admin_login(request):
-    return render(request,"admin_login.html")
+    return render(request, "admin_login.html")
 
 
 def login_check(request):
     un = request.POST.get('t1')
     ps = request.POST.get('t2')
-    if un == 'alok' and  ps == 'kumar':
-        return render(request,"admin.html",{'message':"Welcome Admin"})
+    if un == 'alok' and ps == 'kumar':
+        return render(request, "admin.html", {'message': "Welcome Admin"})
     else:
-        return render(request,"admin_login.html",{'meaasges':'Invalid credential'})
+        return render(request, "admin_login.html", {'meaasges': 'Invalid credential'})
 
 
 def admin_logout(request):
-    return render(request,"index.html")
+    return render(request, "index.html")
 
 
 def schedule_course(request):
-    return render(request,"schedule_course.html")
+    return render(request, "schedule_course.html")
 
 
 def save_course(request):
@@ -37,19 +39,19 @@ def save_course(request):
     cfe = request.POST.get('s5')
     cdu = request.POST.get('s6')
 
-    CourseModel(cname=cna,cfaculty=cfa,cdate=cda,ctime=cti,cfee=cfe,cduration=cdu).save()
-    return render(request,"admin.html",{"message":"Data saved Sucessfully"})
+    CourseModel(cname=cna, cfaculty=cfa, cdate=cda, ctime=cti, cfee=cfe, cduration=cdu).save()
+    return render(request, "admin.html", {"message": "Data saved Sucessfully"})
 
 
 def view_course(request):
     res = CourseModel.objects.all()
-    return render(request,"view_course.html",{'data':res})
+    return render(request, "view_course.html", {'data': res})
 
 
 def update_course(request):
     id = request.POST.get('no')
     res = CourseModel.objects.get(cid=id)
-    return render(request,"update_course.html",{'data':res})
+    return render(request, "update_course.html", {'data': res})
 
 
 def update(request):
@@ -60,7 +62,7 @@ def update(request):
     ti = request.POST.get('t5')
     fee = request.POST.get('t6')
     dur = request.POST.get('t7')
-    CourseModel.objects.filter(cid=id).update(cname=na,cfaculty=fna,cdate=da,ctime=ti,cfee=fee,cduration=dur)
+    CourseModel.objects.filter(cid=id).update(cname=na, cfaculty=fna, cdate=da, ctime=ti, cfee=fee, cduration=dur)
     return redirect("view_course")
 
 
@@ -72,12 +74,12 @@ def delete_record(request):
 
 def view_online_course(request):
     res = CourseModel.objects.all()
-    return render(request,"view_online_course.html",{'data':res})
+    return render(request, "view_online_course.html", {'data': res})
 
 
 def stu_register(request):
     course = CourseModel.objects.all()
-    return render(request, "stu_register.html", {'all_course':course})
+    return render(request, "stu_register.html", {'all_course': course})
 
 
 def save_student(request):
@@ -87,27 +89,39 @@ def save_student(request):
     pa = request.POST.get('n4')
     courses = request.POST.getlist('n5')
     try:
-       sm = StudentModel(name=na,contact_no=cno,email=em,password=pa)
-       sm.save()
-       sm.scourses.set(courses)
-       return render(request, "stu_register.html", {'message': 'registed Successfully'})
+        sm = StudentModel(name=na, contact_no=cno, email=em, password=pa)
+        sm.save()
+        sm.scourses.set(courses)
+        return render(request, "stu_register.html", {'message': 'registered Successfully'})
     except IntegrityError:
-
         return render(request, "stu_register.html", {'error': 'Wrong Contact no'})
 
 
 def stu_login(request):
-    return render(request,"stu_login.html")
+    return render(request, "stu_login.html")
 
 
 def stu_validate(request):
     cno = request.POST.get('t1')
     pwd = request.POST.get('t2')
-    c_no = StudentModel.objects.get(contact_no=cno)
-    p_wd = StudentModel.objects.get(password=pwd)
+    cn = StudentModel.objects.get(contact_no=cno)
 
-    if cno == c_no and pwd == p_wd:
-        return render(request,"stu_page.html")
+
+    # print(cn.contact_no,cn.password)
+    try:
+        if cno == cn.contact_no or pwd == cn.password:
+            return render(request, "stu_page.html",{'data':cn})
+
+    except ObjectDoesNotExist:
+        return render(request, "stu_login.html", {"error": 'You are not registered'})
     else:
-        return render(request,"stu_login.html",{'error':'Invalid Details'})
+        return render(request, "stu_login.html", {'error': 'Invalid Details'})
 
+
+def enroll(request):
+    res = CourseModel.objects.all()
+    return render(request, "enroll.html",{'data':res})
+
+
+def enroll_stu(request):
+    return None

@@ -1,16 +1,16 @@
 
-{% extends 'student-menu.html' %}
+{% extends 'common.html' %}
 
-{% block student-menu %}
+{% block alok %}
 
     <form action="{% url 'stu_validate' %}" method="post">
     {% csrf_token %}
     <table align="center" border="0">
       <tr>
-          <th><h2>Enter Credential</h2></th>
+          <th><h1>Student Login</h1></th>
       </tr>
     <tr>
-        <th><input type="tel" placeholder="contact no" required name="t1"> </th>
+        <th><input type="number" placeholder="contact no" required name="t1"> </th>
     </tr>
     <tr>
         <th>
@@ -25,8 +25,8 @@
 
         {% if error %}
         <tr>
-            <th>
-                {{ error }}
+            <th style="color: red">
+                <h2> {{ error }} </h2>
             </th>
         </tr>
         {% endif %}

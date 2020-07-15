@@ -3,10 +3,20 @@
 
 {% block pwn %}
     <tr>
-      <th style="color: #5e62fa;font-size: 25px">Enroll Course</th> <th style="color: #2e2ef5;font-size: 25px">View Enroll Course</th>
+      <th style="color: #5e62fa;font-size: 25px">
+          <a href="{% url 'enroll' %}">
+              Enroll Course</a></th>
+
+        <th style="color: #2e2ef5;font-size: 25px">
+            <a href="#">View Enroll Course</a></th>
+
+      <th style="color: #2e2ef5;font-size: 25px">
+          <a href="{% url 'stu_login' %}">
+              Logout</a>
+      </th>
     </tr>
     <tr>
-    <th colspan="2">
+    <th colspan="3">
         {% block student-menu %}
 
             {% endblock %}

@@ -34,5 +34,7 @@ urlpatterns = [
     path('stu_register/',views.stu_register,name='stu_register'),
     path('save_student/',views.save_student,name='save_student'),
     path('stu_login/',views.stu_login,name='stu_login'),
-    path('stu_validate/',views.stu_validate,name='stu_validate')
+    path('stu_validate/',views.stu_validate,name='stu_validate'),
+    path('enroll/',views.enroll,name='enroll'),
+    path('enroll_stu/',views.enroll_stu,name='enroll_stu')
 ]

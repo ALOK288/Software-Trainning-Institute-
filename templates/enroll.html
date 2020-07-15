@@ -1,0 +1,57 @@
+
+{% extends 'student-menu.html' %}
+{% block student-menu %}
+    <br>
+
+    <form action="{% url 'enroll_stu' %}" method="post">
+        {% csrf_token %}
+    <style>
+    .menu1{
+        font-family: "Arial Black", serif;
+               font-size: 15px;
+               color: darkslateblue;
+               width: 150px;
+               background-color: #f1f1f1;
+        padding:5px;
+
+    }
+    </style>
+    <table align="center" border="0">
+        <tr>
+            <th colspan="8" style="color: cornflowerblue;font-size: 20px;font-family: Arial ,serif;background-color: #4bfff7">
+                <h1>Online Courses</h1>
+            </th>
+        </tr>
+    <tr>
+        <th class="menu1" >Course ID</th>
+        <th class="menu1" >Course Name</th>
+        <th class="menu1" >Course Faculty</th>
+        <th class="menu1" >Course Date</th>
+        <th class="menu1" >Course Time</th>
+        <th class="menu1" >Course Fee</th>
+        <th class="menu1" >Course Duration</th>
+        <th class="menu1">Enroll Course</th>
+    </tr>
+
+
+
+        {% for x in data %}
+     <tr>
+            <th >{{ x.cid }}</th>
+            <th >{{ x.cname }}</th>
+            <th >{{ x.cfaculty }}</th>
+            <th >{{ x.cdate }}</th>
+            <th >{{ x.ctime }}</th>
+            <th >{{ x.cfee }}</th>
+            <th >{{ x.cduration }}</th>
+            <th>
+              <button type="submit">Yes</button>
+            </th>
+
+         {% endfor %}
+    </tr>
+    </table>
+    </form>
+
+
+{% endblock %}
